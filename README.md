@@ -28,38 +28,60 @@ Syntax: proxy.exe [-target TARGET] [-port PORT]
                   [-username USERNAME] [-password PASSWORD] [-key KEY] [-verbose]
 
 [*] Options:
-  Specify the target address
+
+  Specify the target address:
+  
     -target TARGET (required)
     
-  Specify the port used
+    
+  Specify the port used:
+  
     -port PORT (optional, default port: 8080)       
     
-  Specify the username if authentication is needed  
+    
+  Specify the username if authentication is needed:
+  
     -username USERNAME (optional)              
     
-  Specify the password if authentication is needed  
+    
+  Specify the password if authentication is needed:
+  
     -password PASSWORD (optional)           
   
-  Specify the AES encrypion key. The key should be a hexadecimal string.
+  
+  Specify the AES encrypion key (The key should be a hexadecimal string):
+  
     -key KEY (optional)         
     
-  Enables verbose output  
+    
+  Enables verbose output:
+  
     -verbose (optional)                             
 
+
 [*] Examples:
-  Specify the target to "example.com" and port to "8081" for the proxy
+
+  Specify the target to "example.com" and port to "8081" for the proxy:
+  
     proxy.exe -target=example.com -port=8081        
     
+    
   Specify the basic authentication username to "user" and password to "pass" 
-  for the proxy (Note! Target is missing from this example but is required)  
+  for the proxy (Note! Target is missing from this example but is required):
+  
     proxy.exe -username=user -password=pass         
     
-  Enables verbose output (Note! Target is missing from this example but is required)  
+    
+  Enables verbose output (Note! Target is missing from this example but is required):
+  
     proxy.exe -verbose                          
     
-  Specifies the AES encrypion key used for decryption (Note! Target is missing from this example but is required)  
+    
+  Specifies the AES encrypion key used for decryption (Note! Target is missing from this example but is required):
+  
     proxy.exe -key=6368616e676520746869732070617373776f726420746f206120736563726574
-                                                  
+               
+               
 ```
 
 The proxy server will cache decrypted responses in memory using the groupcache package. 
