@@ -10,6 +10,9 @@ It has the following features:
 4. The option to decrypt responses from the target using an encryption key provided as a hexadecimal string.
 5. The ability to cache decrypted responses in memory using the groupcache package. The cache size and eviction policy can be customized.
 
+The proxy server will cache decrypted responses in memory using the groupcache package. 
+The cache size and eviction policy can be customized by modifying the lruCache variable at the beginning of the main function.
+
 ## Instructions
 
 ###### Building
@@ -83,6 +86,3 @@ Syntax: proxy.exe [-target TARGET] [-port PORT]
                
                
 ```
-
-The proxy server will cache decrypted responses in memory using the groupcache package. 
-The cache size and eviction policy can be customized by modifying the lruCache variable at the beginning of the main function.
