@@ -1,6 +1,6 @@
 # Proxy
 
-This proxy server is a program that allows you to forward HTTP requests to a target website and modify the responses received from the target.
+This proxy server is a program that allows you to forward HTTP requests to a target address and modify the responses received from the target.
 
 It has the following features:
 
